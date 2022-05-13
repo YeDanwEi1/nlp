@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>基于文本挖掘的商品评价的情感分析</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/assets/img/favicon.png" rel="icon">
+  <link href="static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link type="text/css" href= "{{ url_for('static', filename = 'assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link type="text/css" href= "{{ url_for('static', filename = 'assets/vendor/icofont/icofont.min.css') }}"  rel="stylesheet">
+  <link type="text/css" href= "{{ url_for('static', filename = 'assets/vendor/boxicons/css/boxicons.min.css') }}"  rel="stylesheet">
+  <link type="text/css" href= "{{ url_for('static', filename = 'assets/vendor/animate.css/animate.min.css') }}" rel="stylesheet">
+  <link type="text/css" href= "{{ url_for('static', filename = 'assets/vendor/venobox/venobox.css') }}"  rel="stylesheet">
+  <link type="text/css" href= "{{ url_for('static', filename = 'static/assets/vendor/aos/aos.css') }}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link type="text/css" href= "{{ url_for('static', filename = 'assets/css/style.css') }}"  rel="stylesheet">
+
+
+</head>
+
+<body>
+<header id="header">
+    <div class="container">
+
+
+      <nav class="nav-menu float-right d-none d-lg-block">
+        <ul>
+          <li><a href="/wordcloud">词云图</a></li>
+          <li><a href="/LDA">主题挖掘</a></li>
+          <li><a href="/test">在线测评</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+
+        <div class="section-title">
+          <h2>词云图</h2>
+        </div>
+
+<table><tr>
+<td><img src="../static/image/1_分词后的词云图.png" style="width: 300px;height: 300px"></td>
+<td><img src="../static/image/1_分词后的词云图(名词).png" style="width: 300px;height: 300px"></td>
+<td><img src="../static/image/2_词云图(只看pos情感词).png" style="width: 300px;height: 300px"></td>
+<td><img src="../static/image/2_词云图(只看neg情感词).png" style="width: 300px;height: 300px"></td>
+</tr>
+    <tr>
+        <td><h4 style="text-align:center">分词后的词云图</h4></td>
+        <td><h4 style="text-align:center">仅含名词</h4></td>
+        <td><h4 style="text-align:center">仅含积极情感词</h4></td>
+        <td><h4 style="text-align:center">仅含消极情感词</h4></td>
+    </tr>
+</table>
+
+</body>
+
+</html>
